@@ -1,12 +1,33 @@
 # Raw Data
 
-## Bug Detection
+The CSV files in data directory are structured as follows:
 
-## Coverage
+### Randoop,EvoSuite Bug Detection
 
-### Booster
+`generation_time,project,bug_id,test_id,bug_detection`
 
-### Randoop, EvoSuite, EvoSuite (without minimization)
+### Randoop,EvoSuite Coverage
+
+`generation_time,project,bug_id,test_id,coverage`
+
+- generation_time: time budget used for generating tests
+- project, bug_id: Represent project and bug id of Defects4J
+- test_id: To reduce bias introduced by randomness, five tests were generated, and it indicates which one this is. (0~4)
+- bug_detection: If bug is detected, it's indicated as 'yes'; if not, as 'no'.
+- coverage(%): It represents branch coverage.
+
+### Booster Bug Detection
+
+`initial_test_tool,initial_test_generation_time,project,bug_id,test_id,boosting_time,bug_detection,mode`
+
+### Booster Coverage
+
+`initial_test_tool,initial_test_generation_time,project,bug_id,test_id,boosting_time,coverage`
+
+- initial_test_tool: test generation tool of initial test (ES|RD)
+- initial_test_generation_time: test generation time budget of initial test
+- boosting_time: It indicates the time budget used by the Booster for generating tests. In our experiment, there are 60, 120, 180, and 240 seconds.
+- mode: The mode that detected the bug. If both detected, it's indicated as 'both'. (seq-c|seq-p|both)
 
 # Booster
 
