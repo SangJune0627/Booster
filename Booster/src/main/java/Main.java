@@ -49,12 +49,12 @@ public class Main {
             /*
              * handle mut testcases
              */
-            handlePrimitiveTestCases();
+            handleMutTestCases();
         } else if (mode.equalsIgnoreCase("seqp")) {
             /*
              * handle mut testcases
              */
-            handleMutTestCases();
+            handlePrimitiveTestCases();
         }
     }
 
