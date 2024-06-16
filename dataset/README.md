@@ -68,7 +68,7 @@ CSV files commonly contain the following keywords, each representing the followi
     * Iteration number of the five repeated experiments.
     * 0,1,2,3,4
 * coverage
-    * branch coverage ($\frac{\#\ of\ covered\ branch}{\#\ of\ total\ branch}* 100)$
+    * branch coverage ($\frac{A number\ of\ covered\ branch}{A number\ of\ total\ branch}* 100)$
 
 ### Coverage results of [Booster](./coverage/Booster_coverage.csv)
 
